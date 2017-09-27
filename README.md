@@ -15,7 +15,7 @@ The project defines the following modules or microservices :
 * Roles
 * Permissions
 
-* [Mongo Schema Definition] (https://github.com/foxsermon/ProtoDemoMongoSchema) List collections.
+* [Mongo Schema Definition](https://github.com/foxsermon/ProtoDemoMongoSchema) List collections.
 
 ![mongo log](https://www.ctl.io/knowledge-base/images/mongodb/mongodb-logo.png)
 
