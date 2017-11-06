@@ -8,11 +8,7 @@
 	 	<module>ProtoDemoCatalog</module>
     <module>ProtoDemoComments</module>
     <module>ProtoDemoCore</module>
-    <module>ProtoDemoMobileAndroid</module>
-    <module>ProtoDemoMongoSchema</module>
-    <module>ProtoDemoMySqlSchema</module>
     <module>ProtoDemoSecurity</module>
     <module>ProtoDemoUser</module>
-    <module>ProtoDemoWebApp</module>
 	 </modules>
 </project>
