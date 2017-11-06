@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let catalog of observableCatalogs | async" >
+    Id: {{catalog.id}}, Name: {{catalog.catalogName}}
+    <ul>
+    	<li *ngFor="let depa of catalog?.departments" >
+    	    Id: {{depa.deptId}}, {{depa.departmentName}}
+		    <ul>
+    			<li *ngFor="let subdepa of depa?.subdepartments" >
+    	    		Id: {{subdepa.subDeptId}}, {{subdepa.subDepartmentName}}
+				    <ul>
+    					<li *ngFor="let product of subdepa?.products" >
+    	    				Id: {{product.prdId}}, {{product.productName}}, {{product.price}}, {{product.quantity}}
+    					</li>
+    				</ul>    	    		
+    			</li>
+    		</ul>
+    	</li>
+    </ul>
+  </li>
+</ul>
+<div *ngIf="errorMessage"> {{errorMessage}} </div> 

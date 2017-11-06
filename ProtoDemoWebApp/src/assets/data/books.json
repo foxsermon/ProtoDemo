@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"catalogName": "Core Java",
+		"author": [
+			{"id": 10, "name": "Ten"},
+			{"id": 11, "name": "Eleven"}
+		]
+	},
+	{
+		"id": 2,
+		"catalogName": "Angular 2",
+		"author": [
+			{"id": 21, "name": "Ten20"},
+			{"id": 21, "name": "Eleven21"}
+		]
+	},
+	{
+		"id": 3,
+		"catalogName": "Hibernate",
+		"author": [
+			{"id": 30, "name": "Ten30"},
+			{"id": 31, "name": "Eleven31"}
+		]
+	}
+]
