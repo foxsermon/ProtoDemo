@@ -26,18 +26,17 @@ public class CatalogController {
 	
 	@PreAuthorize("#oauth2.hasScope('resource-server-read')")
 	@RequestMapping(method = RequestMethod.GET, value = "/catalogs", headers = "Accept=application/json")
-	//@ApiOperation(value = "Find all", notes = "${CatalogController.findAll.notes}")
+	@ApiOperation(value = "Find all", notes = "${CatalogController.findAll.notes}")
 	public List<Catalog> findAll() {
 		List<Catalog> catalogs = service.findAll();
 		logger.info("Size : " + catalogs.size());
 		return catalogs;
 	}
 
-	@PreAuthorize("#oauth2.hasScope('resource-server-read')")
 	@RequestMapping(method = RequestMethod.GET, value = "/catalog/{id}", headers = "Accept=application/json")
-	//@ApiOperation(value = "Find By Catalog Id", notes = "${CatalogController.findById.notes}")
+	@ApiOperation(value = "Find By Catalog Id", notes = "${CatalogController.findById.notes}")
 	public Catalog findById(
-			//@ApiParam(value = "${CatalogController.findById.id}", required = true)
+			@ApiParam(value = "${CatalogController.findById.id}", required = true)
 			@PathVariable("id") Integer id
 			) {
 		logger.info("Looking for Catalog :" + id);
