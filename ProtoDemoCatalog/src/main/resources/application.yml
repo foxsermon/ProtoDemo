@@ -1,0 +1,9 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://localhost:8080/ProtoDemoSecurity/oauth/token_key
